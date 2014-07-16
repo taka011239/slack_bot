@@ -10,3 +10,9 @@ deploy:
   app: sheltered-reef-5921
   on:
     repo: taka011239/slack_bot
+notifications:
+  hipchat:
+    rooms:
+      secure: SAy+/uHGrqc2Bz8qFT9BENyj5gl3RkPmMnCc74nK6Lo4mz9PnChMsRbboTDcv3gVSzASsvSb2BmuY+HGOR/7sAop5C0irou2CvO7tRyAysUU9vDxpRujxnTwwh2RMX5tG4yeeAjrOOPXMNU/mimpyVxG/wjAWUEJ9r9AEM6ZDpE=
+      template:
+      - '%{repository}#%{build_number} (%{branch} - %{commit} : %{author}): %{message}'
