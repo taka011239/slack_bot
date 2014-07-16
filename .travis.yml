@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+- '0.10'
+install:
+- sudo apt-get update -qq
+deploy:
+  provider: heroku
+  api_key:
+    secure: MKdtah0spGq6va0zHQnjzt+Km5Xf6ZwtOodigzMqpobu2yKEemBe/+H6gL9hf4l7P6r1KGcTXh6uayAezUEsdeGSv66VK9GwI8eS8UgMGI7uk/yhUKAB6CTiPbcv7KvImgHWHMSNxh/qav0U8CHKDTc/JclvqepoGvfdbo8Ch8A=
+  app: sheltered-reef-5921
+  on:
+    repo: taka011239/slack_bot
